@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <title>Bank Info with IFSC Code</title>
+</head>
+<body>
+        <div class="container-xxl">
+            <div class="container">
+                <div class="align-items-center bg-white text-center justify-content-center">
+                    <h2>Bank Details with IFSC Code</h2>
+                    <form onsubmit="checkIFSC(event)">
+                        <input type="text" style="margin-top: 200px;" id="ifsc" placeholder="Enter Code" required />
+                        <button class="btn btn-success"type="submit">Get Bank Details</button>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="showBankDetails"></div>
+    
+</body>
+
+<script src="main.js"></script>
+
+</html>
